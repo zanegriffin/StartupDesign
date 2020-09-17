@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&family=Oswald:wght@700&display=swap');
+
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+
+body {
+  width: 1250px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px 0;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+  }
+  
+  /* Fonts, classes are so I can reuse the styles on a variety of elements */
+  .merriweather { font-family: 'Merriweather', serif; }
+  .oswald { font-family: 'Oswald', sans-serif; }
+  .lato { font-family: 'Lato', sans-serif; }
+  
+  /* Colors */
+  /* Dark yellow: #f2ff00 */
+  /* Lighter yellow: #ffd900 */
+  /* Light gray: #adadad */
+  /* Medium gray: #878787 */
+  
+  /* Background Image */
+  /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+
+
+#top {
+    background-color: black;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+h1 {
+    color: #f2ff00;
+    padding-left: 50px;
+    font-size: 30px;
+  }
+
+nav ul {
+  display: flex;
+  padding-right: 30px;
+  align-self: center;
+  justify-content: flex-end;
+ }
+
+  li{
+    
+    list-style-type: none;
+    font-size: 18px;
+    width: 110px;
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  /* makes blog scoot over */
+li:nth-of-type(5) {
+    text-align: left !important;
+  }
+
+  .bold {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+
+  .normal {
+    font-family: 'Lato', sans-serif;
+  }
+
+  
+
+  #banner {
+    display: flex;
+    height: 65px;
+    background-color:#adadad;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid;
+    border-top-color:#f2ff00;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 20px;
+    border-bottom: 2px solid;
+    border-bottom-color: #878787;
+    
+  }
+
+  #line {
+    color: #878787;
+    text-decoration: line-through;
+    border: none;
+  }
+
+  span {
+    border-bottom: 2px solid;
+    border-color: #f2ff00;
+  }
+
+  #image {
+    height: 400px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: -345px -420px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* searched through a stack forum over rgba */
+  #matching{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 60px;
+    padding: 50px;
+    line-height: 1px;
+  }
+
+  h3{
+    font-weight: 700px;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1px;
+  }
+
+  .button {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f2ff00;
+    border-radius: 10px;
+    border-bottom: 1.5px solid;
+    border-color: #878787;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+  }
+
+ section.options ul {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .flex{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   
+ }
+
+ ul div {
+   margin-top: 30px;
+   
+ }
+
+ li div {
+   height: 35px;
+   background-color: #adadad;
+   align-items: center;
+   margin: 0;
+   padding-top: 14px;
+   border-radius: 10px;
+   width: 270px;
+   border-bottom: 2px solid;
+   border-color: #878787;
+ }
+
+ h5 {
+   align-self: center !important;
+   font-family: 'Oswald', sans-serif;
+ }
+
+  footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  footer p {
+    margin-left: 40px;
+    
+  }
+
+  /* horizontal lines from w3 */
+  .vl {
+    border-left: 2px solid #adadad;
+    height: 200px;
+  }
